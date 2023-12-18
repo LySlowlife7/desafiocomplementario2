@@ -1,0 +1,21 @@
+<title>Trippy Ind</title>
+	<link rel="stylesheet" href="login.css">
+
+<p>{{message}}</p>
+<p>{{error}}</p>
+
+<body>
+<div id="container">
+	<div class="login-container">
+		<h1 class="title">INICIAR SESIÓN</h1>
+		<form method="post" action="/api/session/login">
+			<input type="email" placeholder="CORREO ELECTRÓNICO" name="email" id="input-email">
+			<input type="password" placeholder="CONTRASEÑA" name="password" id="input-contraseña">
+			<input type="button" value="login" class="button-login">
+		<p id="pregunta">¿No tienes cuenta?<a id="cuenta" src="">REGISTRARSE</a></p>
+		</form>
+	</div>
+</div>
+
+<script src="login.js"></script>
+</body>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    background-image: url("multimedia/fondoRegistro.gif");
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.formulario-signup{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.signup-container{
+    width: 465px;
+    height: 490px;
+    padding: 1rem;
+    margin: 3rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+.crear-cuenta{
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+#icon1{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-right: 0.3rem;
+    height: 30px;
+    cursor: pointer;
+}
+#icon2{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-right: 0.3rem;
+    height: 30px;
+    cursor: pointer;
+}
+#icon3{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-right: 0.3rem;
+    height: 30px;
+    cursor: pointer;
+}
+#icon4{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-right: 0.3rem;
+    height: 30px;
+    cursor: pointer;
+}
+#icon5{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-right: 0.3rem;
+    height: 30px;
+    cursor: pointer;
+    
+}
+#icon6{
+    margin: auto;
+    padding: 0.4rem;
+    border: solid thin #ffffffa8;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.register-icons{
+    height: 70px;
+}
+
+#signup-usuario{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: 2px solid #cbcbcb;
+    border-left: 2px solid #cbcbcb;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 4px
+}
+
+#signup-email{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: 2px solid #cbcbcb;
+    border-left: 2px solid #cbcbcb;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 4px
+}
+
+#signup-contraseña{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: 2px solid #cbcbcb;
+    border-left: 2px solid #cbcbcb;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 4px
+}
+.title{
+    color: white;
+    margin-top: 3rem;
+}
+.username{
+    text-align: left;
+    display: block;
+    color: white;
+}
+.email{
+    text-align: left;
+    display: block;
+    color: white;
+}
+.password{
+    text-align: left;
+    display: block;
+    color: white;
+}
+
+.button-signup{
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: rgba(255, 255, 255, 0.14);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button-second{
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-signup:hover{
+    box-shadow: 0px 0px 8px #ffffffa4;
+}
+.button-second:hover{
+    opacity: 1;
+}
+
+.mensajeDeBienvenida{
+    margin-top: 50px;
+    margin-left: 250px;
+    width: 300px;
+    background-color: rgb(51, 51, 51, 0.602);
+    color: white;
+    padding: 10px;
+}
+.button-signup{
+    margin-top: 10px;
+}

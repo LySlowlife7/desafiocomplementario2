@@ -1,0 +1,46 @@
+ <title>Trippy Ind</title>
+    <link rel="stylesheet" href="signUp.css">
+
+<p>{{error}}</p>
+
+<body>
+    <div id="container">
+        <div class="signup-container">
+            <h1 class="title">CREAR CUENTA</h1>
+            <form  method="post" action="/api/session/signup">
+                <div class="register-icons">
+                    <img id="icon1"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAqhJREFUSEvdVU1oE1EQfrP5qSbSGrCiJVlppEIOHsSDBy9FQVQiXqwnoVmj8QdakkBpD4IUFG3RJFioxqJJRS8BQYRCRMWLF8GDNxVLG7OLxVqh1hKaptlxXn5kdxORVnPpwCPvffPzzZuZlwXWYIEGx2frmMDdH28pLFuPMGSdCOyJEpXS2nI6w4mjoIIXBHyVM6vpuWH/z3rlrilRWyBuE+xN46Q4Tg6WitNXxvCDNgAy8JDN1gq2BMAeWwsL/smR3rzWrobAGUxcB4D+NTUf2CU54rv6RwIxeM+NYOKZVjNfLU+OWYod8rD/S9VRdwNXKHmbFOdXG1VXOsQhJSYN1BDsDcQts/amWVJs/hcC8lXkaLfIGCCP8/sGYjjRhQipOsHfE9ZBy2zQFeg8Sctj9KHJOpS9KT3XEThDyTixBbTGAjLv55hvQhx45MB84R3pKLOSTFus+T1TQ+d+iKHEMZqopzoSYDeo2X06Aqr/awL2awwX5ebpFjY4qHJMDCfHENmZshOMZaPd5WS6UiaXM8ffwMaqL9VmQon6vEaCRQLs2kxMiI5MTJrnGN3wBd3wYEkP+EyOSIf5dlvP/VaLWeC900pGjvrajQSlpmiFgJcCY3cRcR8D6CFddXyXaT9Cj+8tMuEsMDxgcJ0nAoeRoEgAxfsv8p0IthgJ+BO3asLnaL9Cq/kvlAuk5xNm09jNEEGbniCYvELd4w/EVFbAxyKwCyZVdSLAKYLctLZXgszQ7xQgPiwKgiIg3qHzroquQP9Ll7MR3zUdAT/sCD7wqKCO0razYjy3lLe1fxs9yQegRlovpjZtsOaylE2p3iRpLGKvckv6VDWu+8Fx9SV3shU8TY19Q/Osn3EDjRgcP0FTtZtukaCJyxizWMdftHo1XwvW8BL9AjUB2hmUwLuUAAAAAElFTkSuQmCC" title="DISCORD" alt="registrate con: DISCORD"/>
+                    <img id="icon2"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAnZJREFUSEu1lk1o1EAUgOfFSivqQUTYxCI96EFQxKMiiAdREVHRgyheFEy2UOmym9CDuBXxsLsR9WCTXQ+9CD2IBcWfk+JBPPdo/QFRNongoYX+CK15vqTduJPNxK52A0vYee/NN+93AqzDD3R4f5YK2D4w0D232H0GkR1FBntIuY9+9Be/0HuCIbx0cHqc1WoLooMKAZls/higNEKGfWleEuzTGpS0erX8KkkvEaBoxjAZFtsIn08eGp5dvh23aQEoWf0GxeB6G5v/UUU26FYr95ptOYCiFk4gwNOUzX8QPC+h9Maplb4GerKmm/TKL9v44EsHSfa2sUcE2NI/vKHLn/1IgowAsAgAuxyrPNksjwEC0aTrT+9uJD4CyKqhMUAr5fRjrl0535ArqnGYjrufMThCm+zjwoJ4yqmaT4K1CEAGzxDwuBiA11zbvBXIM6pxFgAfiXXhgWuXr3CAjKbXiaYIjQBzrmXeDeOeLQxSD9wR6iKboGTv5QAUy3la6FklwBQBNvGArD7DkK3nAeCSq2KvSFlR9dcI7BBvhzMUzo1xDz7Qwo5mRWTM8ezK1pTEB2X6jeS9MZ33VBA744CHtHChHQ+CWTW70PMzfgBEHPWq5iW+irTCOWr3sdXIASSVKSsWu+Tvc58JsC0RsvIqisLDeRDW99IEffEfAARJOuCMlN419mgZdrJm0LDCqy2QFXkAN6nquEGZNK5BVnWbejzsxOj5C4ASW6LEDsUPJrxwyJOL5EnQrZtDIzGgTiNG9SzzeVJoU6/M3lxunT+/9jKBTvvAxj2rcj/MlWr0A8OTTILH7q+p0X+6MtOaqx1Zx78qfgO2SxcoCMG3XAAAAABJRU5ErkJggg==" title="FACEBOOK" alt="registrate con: FACEBOOK"/>
+                    <img id="icon3"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAArxJREFUSEvVVFtIFGEUPv+4m6WFIZU7m0RSD6V2oR4MI4iCXopeqofACKxwLA2jnZUgUB93ZyUDLzMWJNZDYPUYBIFYoCI9GF0oCBTM2TEyC0IUd/f0zaRksu6OgkQHDjPn55zvO5f//IJWWMQK49O/J8i/cC037vXcJOISIqkA31xUPcREvUiv02rTelJ1IWUFeYp6QiJqA0A+9Cv0HTQbWgjNsoEFU4vpy6qhhoZYMqJFCXyVwfOCuQNBcWJRFTXCBv6RuCNCVoJlMDX850GfRseHT1JXV3whSVKCPCVQLJF4DWcUQKejuvY4WXZypXoIlC8cRuKzph556IrArwRamMRlOBsAV3wV1wuFyHhAzAUZIlb8Wb81OgeESl6hkv1OFbp23BWBrKjv4bhTSNJBszXU61PU5yj1qJOpoEtmm3b3D0GgE6fnYH8EwQ6XBEETWckej9g80hw2kaVj28EsiSNWa7g7CcEICLa4IvArah+meSBBvGtMj7yVlcAgstyD4JhIZOeY7fWTc0D+SrWfmUrg32fpWqlLgmA9E9cx8z3LiJSjZY8QeAragywPz4FsKA+u867icdhe+DdbeqTaFcHscg3gakjRTVnb/WOT35BhDjSMLGvntecqKrtt2xJLe0eNkH3z/pJF9+B3dqJUCB5GJR9mowamEtKxifbQD9+V2iIRj/eDYK2zbIZWtRDcuRTJDuefoccX0eM7OJuCrsaYfyJqEMtn9xvrQkOZmTP7hpuavi+LQK5Q7wOkDG/CE+A9owSHYK8B2Et8uz0ZosO+aYslmrYCDPgTgrdh8QKWHm5MV7HrGTiOdXUeeWxy2pkhJ4oso9FewCVJygp81Tc2ipnYFzi9MXVt95KQZ51TEmytqVk/PeWdYBZnLCNs78KSJd0MBIbcGTU0+61ZlqQjWBbo/KD/n+AXvIr7GXj5BPEAAAAASUVORK5CYII=" title="PINTEREST" alt="registrate con: PINTEREST"/>
+                    <img id="icon4"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAypJREFUSEvFVW1IU1EYft+7oVLY3PBnplFBhUSFERHlj4pACClF0/qjG7tTIijSoAj/hJFFSYFuYzMpVkqfFPSnoB8SSCQhlBVSSB+SSNuUfoTb7tuzzdk272wE4oG73XPOc97nfZ/nnHOZFrnxIsenpSEw2e1rFI6cJOJdRFKKKjMlIph6C8xAhCKd067e0XRF5i00q40OLLoGoJGEviD0IDN/0JNSRLZifDOeIjwhFmr2u72eZGwKgUltLFOIB0EwoolycMrt/pSNR2aHtRTJPAZ2lTBtCzq9bxLrUggsqu2BkFQIR9YHnb1j/wpuVhvqiJR2EhkXhY+hgtcI+Mjv8lbpEpjt1jFSaCTg9FakBG9rUywT4/uItI2axhGF6b3f5Xle4LCVs8gLYMcCLu9qs2p9jUoKA25viT6Bap2GPL6Ay9OUAFiaG4okovSjvyOtogFU6yHhaYWoMKr9rAL7QbY8E4EGgssgaI0BkLn5x7eXeCshllMhynmWp2mGMIdRDXdAjlEE24157CYis2pDIlKNMUMmgijwAgBnogCLo7FGhPuhbQ0yvJtcAbKtRQV9okhlsLsnajBB4jvYdbVYj6LiLcVkaIg11AENT89m1IGMWoyG3PzJrq5fyQT5dnuhkSOTCHAepp6L4R1WH9bXg2Au7jwCJu6EgSdmM7qIFFo557fJf90Hf/62BAExtwecnrPxhKy38Hd0QQIRuhp0e3GKYxJVQaJ7zFLtd/bcTyaAHPUg96VIFK/g8IIeJFeQZHIxTG6JmWycMYZDtBciXxLijwhWnmZyJcbyMnkAnQXbtEdNACw220oxSB/6O5MrwPuAwqG6n86b3+ew8YO6BwQmfQK7dRQHbVTvoBVMfK1UhA5AshkQPsXOeZLIPBEM23QIp3oFNsk6fYK4hodwVWzI5qpI8aTJtok0GYYvt5HgEV2CAod1C/b8ECaHNUWrmuq+8TlNFt2uOR78ISaLNYW3T3V7ojFibaHrOnpYXmEbzsSAImH8vBONc5lprTAbo+NC2jIWLsNrGL3j8M+ZnIXuh+R/PjiaGK7oXe9L88nMRvdsMYtewR/7ZnUo1HrTMgAAAABJRU5ErkJggg==" title="INSTAGRAM" alt="registrate con: INSTAGRAM"/>
+                    <img id="icon5"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvtlT1LA0EQhmeSKGqMJDEQBMXCgFhYxMbSzkawsA+KB2f8+A8hxNZGFD0lp3/Bv2CngqKNH4VFjB9oMAmmEPVunIvkkju8y0FMIWSbY3ffd57dmVkOockDmxwfWoC6GTakKCSKfV+ophAhAkT97B6qGwGAWHMJiC9A6rW7DZK5Dfmh4tMBocX5YUXFE97wOQhqJymqLnWsuLV3q4l0QDAu7BPBbIPBy3aOIxd20oIBEFgQTnkh+icAgOOClB43A3K80GsBIFBpivO8zneOODhEJi+lB80AhRdcFmaVDW5IJDz+x7sVREyxrtsGlGd9UAeEYzHvR1d7ycZAbNDhPlEMeUBZ5duItXWs8b+xvqd6Az5Z4Cn7aQNQ2OCp7DsAvLO+05wirZ+txg+gnKL7JURKstBvJUag51dJDpsBWoq8FiaFXDSDCq45KzJd5SV5xAzI8MKAgw5xIjnkG08YAaJwwKebduJ2oNllgNYA1ZccEOdGAT1H/A7LxWlkEMJYYTt9ZgBoE39ciALhsgshq82JaJI/2uvu+AVYAqQLfjrV7iO6IaDNgiSfV/StH07dUv3/FH0DVpqTGWmsa+0AAAAASUVORK5CYII=" title="YOUTUBE" alt="registrate con: YOUTUBE"/>
+                    <img id="icon6"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcJJREFUSEvtlb9Lw1AQx+9SKjjZFjdF0K046CwtFpzUwR/gKtiUtI4FJxdF3AQn0QTS2MVFsIqgi3+BIKKLk4ODiiK2QSgimJz3Ci2NbUpbSSffeO/77nPf4717CB4v9Dg/dBigKP4gWs/sqvcvzgpaRuLzJHI4HARS8TkkzHG8CIhXLUOIhkVxDKjkdQCCKfmcuZMsumXRaKuAYFI+5jOzrg5YYLFA2GsLEErKR9yXeXcHSbnUt3YBzThwBfDhEwbPlKsLJOMjCHjDPd7Ia5k1UdU/wOMWKfImSBgpqHpM9LtneWlIIp9BYGdN1ciKWCdu0Rlzpjy5pqGUnCaCbR4OTwVN7y8/UudLbvMdcGtW+H5vcdJHQitqqtmHhgAWv0qIallko31t7hmnQUUZQMmOV48QG6gPCRLijO2DyMdu5r56382BYwwRgv79Za/6u6RL3hisM6NeLB9EfycXuqYALMpxf8OsDtckR3izJBirl7wGEEol1qsTsO0YEI077cAOSvheiZF1mNf27+q4KoUa/mgCSESlOcPLBqTFgmocuCWrF28I6E8vdBc/AxPsYprdXJiaLj6jllaH/+SWamtO/AOvQgEoSEY17gAAAABJRU5ErkJggg==" title="TWITCH" alt="registrate con: TWITCH"/>
+                </div>
+
+                <span class="username">NOMBRE DE USUARIO</span>
+                <input type="text" name="first_name" id="signup-usuario">
+                <span class="email">CORREO ELECTRÓNICO</span>
+                <input type="email" name="email" id="signup-email">
+                <span class="password">CONTRASEÑA</span>
+                <input type="password" name="password" id="signup-contraseña">
+                <input type="button" value="signUp" class="button-signup">
+        </div>
+    </div>
+    </form>
+
+    <div class="container-cuentaCreada">
+        <div class="mensajeDeBienvenida">
+            <p>Si ya tienes cuenta, inicia sesión aquí</p>
+            <button class="button-signup">LOGIN</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="signUp.js"></script>
+</body>
